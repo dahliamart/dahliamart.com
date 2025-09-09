@@ -156,27 +156,11 @@
             border-radius: 2px;
         }
         
-        .supplier-section {
-            margin-bottom: 50px;
-            background: var(--white);
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .supplier-title {
-            color: var(--dark-blue);
-            font-size: 24px;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--light-blue);
-        }
-        
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
         
         .product-card {
@@ -200,17 +184,6 @@
             justify-content: center;
             position: relative;
             overflow: hidden;
-        }
-        
-        .product-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .product-card:hover .product-img img {
-            transform: scale(1.05);
         }
         
         .product-img i {
@@ -529,189 +502,233 @@
     <!-- Products Section -->
     <section id="products">
         <div class="container">
-            <h2 class="section-title">Produk Kami</h2>
+            <h2 class="section-title">Semua Produk Kami</h2>
             
-            <!-- Supplier PT BOUGENVILE -->
-            <div class="supplier-section">
-                <h3 class="supplier-title">Supplier PT BOUGENVILE</h3>
-                <div class="products">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-receipt"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Kwitansi (200 kali)</h3>
-                            <p>Kwitansi dengan kualitas terbaik untuk kebutuhan administrasi</p>
-                            <div class="product-price">
-                                <span>Rp 2,250.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
-                        </div>
+            <div class="products">
+                <!-- Produk ATK -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-receipt"></i>
                     </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-pencil-alt"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Pensil (2B)</h3>
-                            <p>Pensil 2B berkualitas untuk menulis dan menggambar</p>
-                            <div class="product-price">
-                                <span>Rp 3,375.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-pen"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Bolpoint (Habis Pakai)</h3>
-                            <p>Bolpoint dengan tinta halus dan nyaman digunakan</p>
-                            <div class="product-price">
-                                <span>Rp 4,500.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Spidol Berwarna (10 Warna)</h3>
-                            <p>Spidol dengan 10 pilihan warna untuk kreativitas</p>
-                            <div class="product-price">
-                                <span>Rp 22,500.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
+                    <div class="product-info">
+                        <h3>Kwitansi (200 kali)</h3>
+                        <p>Kwitansi dengan kualitas terbaik untuk kebutuhan administrasi</p>
+                        <div class="product-price">
+                            <span>Rp 2,250.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Supplier PT ANYELIR -->
-            <div class="supplier-section">
-                <h3 class="supplier-title">Supplier PT ANYELIR</h3>
-                <div class="products">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-soap"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Sabun Mandi Imperial Leather (80 gr)</h3>
-                            <p>Sabun mandi dengan wangi yang menyegarkan</p>
-                            <div class="product-price">
-                                <span>Rp 4,500.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
-                        </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-pencil-alt"></i>
                     </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-pump-soap"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Sabun Mandi Paquito (80 gr)</h3>
-                            <p>Sabun mandi dengan formula lembut untuk kulit</p>
-                            <div class="product-price">
-                                <span>Rp 3,375.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-pump-soap"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Shampoo Netil (500 ml)</h3>
-                            <p>Shampoo untuk rambut sehat dan berkilau</p>
-                            <div class="product-price">
-                                <span>Rp 45,000.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-baby"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Bedak Bayi Canaan (500 gr)</h3>
-                            <p>Bedak bayi dengan formula hypoallergenic</p>
-                            <div class="product-price">
-                                <span>Rp 11,250.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
+                    <div class="product-info">
+                        <h3>Pensil (2B)</h3>
+                        <p>Pensil 2B berkualitas untuk menulis dan menggambar</p>
+                        <div class="product-price">
+                            <span>Rp 3,375.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Supplier PT CEMPAKA -->
-            <div class="supplier-section">
-                <h3 class="supplier-title">Supplier PT CEMPAKA</h3>
-                <div class="products">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-cookie"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Wafer Cokelat Yakobs (600 gr)</h3>
-                            <p>Wafer cokelat dengan rasa yang lezat dan renyah</p>
-                            <div class="product-price">
-                                <span>Rp 33,750.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolpoint (Habis Pakai)</h3>
+                        <p>Bolpoint dengan tinta halus dan nyaman digunakan</p>
+                        <div class="product-price">
+                            <span>Rp 4,500.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
                         </div>
                     </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-cookie-bite"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Wafer Cokelat UBS (600 gr)</h3>
-                            <p>Wafer cokelat dengan kualitas premium</p>
-                            <div class="product-price">
-                                <span>Rp 27,000.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Spidol Berwarna (10 Warna)</h3>
+                        <p>Spidol dengan 10 pilihan warna untuk kreativitas</p>
+                        <div class="product-price">
+                            <span>Rp 22,500.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
                         </div>
                     </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-candy-cane"></i>
-                        </div>
-                        <div class="product-info">
-                            <h3>Waffer Jahe Manis (390 gr)</h3>
-                            <p>Waffer dengan rasa jahe manis yang khas</p>
-                            <div class="product-price">
-                                <span>Rp 13,500.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
+                </div>
+                
+                <!-- Produk Kesehatan & Kecantikan -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-soap"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sabun Mandi Imperial Leather (80 gr)</h3>
+                        <p>Sabun mandi dengan wangi yang menyegarkan</p>
+                        <div class="product-price">
+                            <span>Rp 4,500.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
                         </div>
                     </div>
-                    
-                    <div class="product-card">
-                        <div class="product-img">
-                            <i class="fas fa-stroopwafel"></i>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-pump-soap"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sabun Mandi Paquito (80 gr)</h3>
+                        <p>Sabun mandi dengan formula lembut untuk kulit</p>
+                        <div class="product-price">
+                            <span>Rp 3,375.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
                         </div>
-                        <div class="product-info">
-                            <h3>Pineapple Ann Manis (390 gr)</h3>
-                            <p>Snack dengan rasa nanas yang manis dan segar</p>
-                            <div class="product-price">
-                                <span>Rp 15,750.00</span>
-                                <button class="add-to-cart">+ Keranjang</button>
-                            </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-pump-soap"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Shampoo Netil (500 ml)</h3>
+                        <p>Shampoo untuk rambut sehat dan berkilau</p>
+                        <div class="product-price">
+                            <span>Rp 45,000.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bedak Bayi Canaan (500 gr)</h3>
+                        <p>Bedak bayi dengan formula hypoallergenic</p>
+                        <div class="product-price">
+                            <span>Rp 11,250.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk Makanan -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wafer Cokelat Yakobs (600 gr)</h3>
+                        <p>Wafer cokelat dengan rasa yang lezat dan renyah</p>
+                        <div class="product-price">
+                            <span>Rp 33,750.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wafer Cokelat UBS (600 gr)</h3>
+                        <p>Wafer cokelat dengan kualitas premium</p>
+                        <div class="product-price">
+                            <span>Rp 27,000.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-candy-cane"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Waffer Jahe Manis (390 gr)</h3>
+                        <p>Waffer dengan rasa jahe manis yang khas</p>
+                        <div class="product-price">
+                            <span>Rp 13,500.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-stroopwafel"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pineapple Ann Manis (390 gr)</h3>
+                        <p>Snack dengan rasa nanas yang manis dan segar</p>
+                        <div class="product-price">
+                            <span>Rp 15,750.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk Lainnya -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Celerek Bayi</h3>
+                        <p>Celana bayi dengan bahan nyaman dan lembut</p>
+                        <div class="product-price">
+                            <span>Rp 16,875.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bulu-bulu (Kemucing)</h3>
+                        <p>Bulu-bulu untuk hiasan dan keperluan rumah tangga</p>
+                        <div class="product-price">
+                            <span>Rp 56,250.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-mitten"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sarung Tangan (Sedang)</h3>
+                        <p>Sarung tangan untuk berbagai keperluan</p>
+                        <div class="product-price">
+                            <span>Rp 13,500.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pasta Gigi Pepsodent (80 gr)</h3>
+                        <p>Pasta gigi untuk perlindungan maksimal</p>
+                        <div class="product-price">
+                            <span>Rp 4,500.00</span>
+                            <button class="add-to-cart">+ Keranjang</button>
                         </div>
                     </div>
                 </div>
