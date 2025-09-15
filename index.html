@@ -210,11 +210,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
         
-        .product-img i {
-            font-size: 64px;
-            color: var(--baby-blue);
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .product-card:hover .product-img img {
+            transform: scale(1.1);
         }
         
         .product-info {
@@ -421,7 +428,7 @@
                 <!-- Stationery Products -->
                 <div class="product-card" data-category="stationery">
                     <div class="product-img">
-                        <i class="fas fa-receipt"></i>
+                        <img src="https://images.unsplash.com/photo-1531346680769-a1d79b57de5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kwitansi">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Kwitansi</h3>
@@ -432,7 +439,7 @@
                 
                 <div class="product-card" data-category="stationery">
                     <div class="product-img">
-                        <i class="fas fa-pencil-alt"></i>
+                        <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pensil">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Pensil</h3>
@@ -443,7 +450,7 @@
                 
                 <div class="product-card" data-category="stationery">
                     <div class="product-img">
-                        <i class="fas fa-pen"></i>
+                        <img src="https://images.unsplash.com/photo-1626238344126-4a72e5b40c6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bolpoint">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Bolpoint</h3>
@@ -454,7 +461,7 @@
                 
                 <div class="product-card" data-category="stationery">
                     <div class="product-img">
-                        <i class="fas fa-palette"></i>
+                        <img src="https://images.unsplash.com/photo-1584978592853-5cdf1a57a2c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Spidol Berwarna">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Spidol Berwarna</h3>
@@ -466,7 +473,7 @@
                 <!-- Hygiene Products -->
                 <div class="product-card" data-category="hygiene">
                     <div class="product-img">
-                        <i class="fas fa-soap"></i>
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sabun Mandi">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Sabun Mandi Imperial Leather</h3>
@@ -477,7 +484,7 @@
                 
                 <div class="product-card" data-category="hygiene">
                     <div class="product-img">
-                        <i class="fas fa-pump-soap"></i>
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sabun Mandi">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Sabun Mandi Paquito</h3>
@@ -488,7 +495,7 @@
                 
                 <div class="product-card" data-category="hygiene">
                     <div class="product-img">
-                        <i class="fas fa-pump-soap"></i>
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sampo">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Sampo Netil</h3>
@@ -499,7 +506,7 @@
                 
                 <div class="product-card" data-category="hygiene">
                     <div class="product-img">
-                        <i class="fas fa-tooth"></i>
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pasta Gigi">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Pasta Gigi Pepsodent</h3>
@@ -511,7 +518,7 @@
                 <!-- Food Products -->
                 <div class="product-card" data-category="food">
                     <div class="product-img">
-                        <i class="fas fa-cookie"></i>
+                        <img src="https://images.unsplash.com/photo-1595851758365-0be4085e7c80?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Wafer">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Wafer Cedekti Yakobs</h3>
@@ -522,7 +529,7 @@
                 
                 <div class="product-card" data-category="food">
                     <div class="product-img">
-                        <i class="fas fa-cookie-bite"></i>
+                        <img src="https://images.unsplash.com/photo-1559622214-5f2e0e6f2d2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Wafer">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Wafer Cedekti UBS</h3>
@@ -533,7 +540,7 @@
                 
                 <div class="product-card" data-category="food">
                     <div class="product-img">
-                        <i class="fas fa-candy-cane"></i>
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Permen">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Wamberty Jan Manise</h3>
@@ -545,7 +552,7 @@
                 <!-- Baby Products -->
                 <div class="product-card" data-category="baby">
                     <div class="product-img">
-                        <i class="fas fa-baby"></i>
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bedak Bayi">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Bedak Bayi Canaan</h3>
@@ -556,7 +563,7 @@
                 
                 <div class="product-card" data-category="baby">
                     <div class="product-img">
-                        <i class="fas fa-baby-carriage"></i>
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Popok Bayi">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Popok Bayi</h3>
