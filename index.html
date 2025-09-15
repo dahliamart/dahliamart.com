@@ -39,44 +39,58 @@ export default function DahliaMart() {
     <div className="min-h-screen bg-gradient-to-b from-sky-300 via-sky-100 to-white text-gray-800 font-sans">
       <header className="relative bg-gradient-to-r from-sky-200 to-sky-400 backdrop-blur-md sticky top-0 z-50 shadow-md">
         <div className="max-w-6xl mx-auto flex justify-between items-center p-6">
-          <motion.h1 
-            initial={{ opacity: 0, y: -20 }} 
-            animate={{ opacity: 1, y: 0 }} 
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-4xl font-extrabold text-white drop-shadow-md tracking-wide"
           >
             Dahlia Mart
           </motion.h1>
           <nav className="flex gap-8 text-white text-lg font-medium">
+            <a href="#hero" className="hover:text-sky-100 transition-colors">Beranda</a>
             <a href="#products" className="hover:text-sky-100 transition-colors">Produk</a>
             <a href="#customers" className="hover:text-sky-100 transition-colors">Untuk Pelanggan</a>
           </nav>
         </div>
       </header>
 
-      <main className="p-6 max-w-6xl mx-auto">
-        <section className="text-center mt-10 mb-16">
-          <motion.h2 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
-            transition={{ duration: 1 }}
-            className="text-3xl font-bold text-sky-700"
-          >
-            Selamat Datang di Dahlia Mart
-          </motion.h2>
-          <p className="mt-4 text-gray-700 text-lg max-w-2xl mx-auto">
-            Toko serba ada dengan produk pilihan terbaik untuk kebutuhan sehari-hari Anda. Nikmati pengalaman berbelanja yang ramah, mudah, dan menyenangkan.
-          </p>
-        </section>
+      {/* Hero Section */}
+      <section id="hero" className="relative bg-gradient-to-r from-sky-200 via-sky-100 to-white text-center py-24">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-5xl font-extrabold text-sky-700 mb-6"
+        >
+          Selamat Datang di Dahlia Mart
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          className="max-w-2xl mx-auto text-lg text-gray-700 mb-8"
+        >
+          Toko serba ada dengan produk berkualitas dan pelayanan terbaik untuk memenuhi kebutuhan sehari-hari Anda.
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 1 }}
+        >
+          <Button className="bg-gradient-to-r from-sky-400 to-sky-500 hover:from-sky-500 hover:to-sky-600 text-white text-lg px-6 py-3 rounded-full shadow-lg">Jelajahi Produk</Button>
+        </motion.div>
+      </section>
 
+      <main className="p-6 max-w-6xl mx-auto">
         <section id="products" className="my-10">
           <h2 className="text-2xl font-bold text-sky-700 mb-8 text-center">Produk Berdasarkan Kategori</h2>
           {Object.keys(groupedProducts).map((category) => (
-            <motion.div 
-              key={category} 
-              initial={{ opacity: 0, y: 20 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
+            <motion.div
+              key={category}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               className="mb-12"
             >
@@ -111,53 +125,9 @@ export default function DahliaMart() {
         </section>
       </main>
 
-      <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Dahlia Mart</h3>
-                    <p>Toko serba ada dengan produk berkualitas dan pelayanan terbaik untuk memenuhi kebutuhan sehari-hari Anda.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Informasi</h3>
-                    <a href="#">Tentang Kami</a>
-                    <a href="#">Kebijakan Privasi</a>
-                    <a href="#">Syarat & Ketentuan</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Karir</a>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Layanan Pelanggan</h3>
-                    <a href="#">Bantuan</a>
-                    <a href="#">Hubungi Kami</a>
-                    <a href="#">Cara Berbelanja</a>
-                    <a href="#">Pengembalian</a>
-                    <a href="#">FAQ</a>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Kontak</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Jl. Merpati No. 123, Jakarta</p>
-                    <p><i class="fas fa-phone"></i> +62 21 4567 8901</p>
-                    <p><i class="fas fa-envelope"></i> dahlia@bisnis.ukwms.ac.id</p>
-                    <p><i class="fas fa-clock"></i> Buka Setiap Hari: 08:00 - 21:00</p>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Dahlia Mart. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+      <footer className="bg-sky-200 p-6 text-center text-gray-700 shadow-inner">
+        &copy; {new Date().getFullYear()} Dahlia Mart. Semua hak dilindungi.
+      </footer>
     </div>
   );
 }
