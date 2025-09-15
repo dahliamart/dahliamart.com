@@ -138,6 +138,43 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
         
+        /* Category Navigation */
+        .category-nav {
+            background-color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 80px;
+            z-index: 90;
+        }
+        
+        .category-nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        .category-nav ul li {
+            margin: 5px 15px;
+        }
+        
+        .category-nav ul li a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .category-nav ul li a:hover,
+        .category-nav ul li a.active {
+            background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+            color: var(--white);
+        }
+        
         /* Products Section */
         .section-title {
             text-align: center;
@@ -156,11 +193,33 @@
             border-radius: 2px;
         }
         
+        .category-section {
+            margin-bottom: 60px;
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-blue);
+        }
+        
+        .category-icon {
+            font-size: 28px;
+            color: var(--dark-blue);
+            margin-right: 15px;
+        }
+        
+        .category-title {
+            font-size: 24px;
+            color: #4a4a4a;
+        }
+        
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            margin-bottom: 60px;
         }
         
         .product-card {
@@ -187,14 +246,9 @@
         }
         
         .product-img img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-        
-        .product-img i {
-            font-size: 64px;
-            color: var(--baby-blue);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .product-info {
@@ -454,6 +508,19 @@
                 font-size: 16px;
             }
             
+            .category-nav {
+                top: 70px;
+            }
+            
+            .category-nav ul li {
+                margin: 5px 8px;
+            }
+            
+            .category-nav ul li a {
+                font-size: 13px;
+                padding: 6px 12px;
+            }
+            
             .about-content {
                 flex-direction: column;
             }
@@ -508,62 +575,31 @@
         </div>
     </section>
 
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#atk" class="active">Alat Tulis</a></li>
+                <li><a href="#kesehatan">Kesehatan & Kecantikan</a></li>
+                <li><a href="#makanan">Makanan</a></li>
+                <li><a href="#rumahtangga">Rumah Tangga</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Products Section -->
     <section id="products">
         <div class="container">
             <h2 class="section-title">Semua Produk Kami</h2>
             
-            <div class="products">
-                <!-- Produk ATK -->
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Kwitansi">
-                    </div>
-                    <div class="product-info">
-                        <h3>Kwitansi (200 halaman)</h3>
-                        <p>Kwitansi dengan kualitas terbaik untuk kebutuhan administrasi</p>
-                        <div class="product-price">
-                            <span>Rp 2,250</span>
-                            <button class="add-to-cart">+ Keranjang</button>
-                        </div>
-                    </div>
+            <!-- ATK Section -->
+            <div class="category-section" id="atk">
+                <div class="category-header">
+                    <i class="fas fa-pencil-alt category-icon"></i>
+                    <h2 class="category-title">Alat Tulis Kantor</h2>
                 </div>
                 
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1581017915017-4c5c397c8d34?w=400&h=300&fit=crop" alt="Pensil 2B">
-                    </div>
-                    <div class="product-info">
-                        <h3>Pensil (2B)</h3>
-                        <p>Pensil 2B berkualitas untuk menulis dan menggambar</p>
-                        <div class="product-price">
-                            <span>Rp 3,375</span>
-                            <button class="add-to-cart">+ Keranjang</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=400&h=300&fit=crop" alt="Bolpoint">
-                    </div>
-                    <div class="product-info">
-                        <h3>Bolpoint</h3>
-                        <p>Bolpoint dengan tinta halus dan nyaman digunakan</p>
-                        <div class="product-price">
-                            <span>Rp 4,500</span>
-                            <button class="add-to-cart">+ Keranjang</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1628336753975-4be8da5e1559?w=400&h=300&fit=crop" alt="Spidol Berwarna">
-                    </div>
-                    <div class="product-info">
-                        <h3>Spidol Berwarna (10 Warna)</h3>
-                        <p>Spidol dengan 10 pilihan warna untuk kreativitas</p>
-                        <div class="product-price">
-                            <span>Rp 22,500</span>
-                            <button
+                <div class="products">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop"
